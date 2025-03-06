@@ -1,15 +1,13 @@
-import Link from 'next/link';
-
-import Navbar from '@/app/components/NavBar';
+import SearchBar from '@/app/components/SearchBar';
+import InfoBoxesList from '@/app/components/InfoBoxesList';
+import HomePageProperties from '@/app/components/HomePageProperties';
 
 const HomePage = () => {
     return ( 
         <div className='home-page'>
-            <Navbar />
-            <h1>Home Page</h1>
-            <Link href='/properties'>
-                Properties
-            </Link>
+            <SearchBar />
+            <InfoBoxesList />
+            <HomePageProperties />
         </div>
     );
 }
