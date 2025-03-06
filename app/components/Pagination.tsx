@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { PROPERTIES_PAGINATION_PAGE } from '@/app/api/routes';
+
 interface PaginationProps {
     page: number;
     pageSize: number;
@@ -15,7 +17,7 @@ const Pagination = ({ page, pageSize, totalItems }: PaginationProps) => {
             {page > 1 ? (
                 <Link
                     className='mr-2 px-2 py-1 border border-gray-300 rounded'
-                    href={`/properties?page=${page - 1}`}
+                    href={`${PROPERTIES_PAGINATION_PAGE}${page - 1}`}
                 >
                     Previous
                 </Link>
@@ -29,7 +31,7 @@ const Pagination = ({ page, pageSize, totalItems }: PaginationProps) => {
             {page < totalPages ? (
                 <Link
                     className='ml-2 px-2 py-1 border border-gray-300 rounded'
-                    href={`/properties?page=${page + 1}`}
+                    href={`${PROPERTIES_PAGINATION_PAGE}${page + 1}`}
                 >
                     Next
                 </Link>

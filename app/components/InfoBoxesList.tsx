@@ -1,5 +1,7 @@
 import InfoBox from '@/app/components/InfoBox';
 
+import { ADD_PROPERTIES, PROPERTIES } from '@/app/api/routes';
+
 const InfoBoxesList = () => {
     return (
         <section>
@@ -10,7 +12,7 @@ const InfoBoxesList = () => {
                         backgroundColor='bg-gray-100'
                         buttonInfo={{
                             text: 'Browse Properties',
-                            link: '/properties',
+                            link: PROPERTIES,
                             backgroundColor: 'bg-black',
                         }}
                     >
@@ -22,7 +24,7 @@ const InfoBoxesList = () => {
                         backgroundColor='bg-blue-100'
                         buttonInfo={{
                             text: 'Add Property',
-                            link: '/properties/add',
+                            link: ADD_PROPERTIES,
                             backgroundColor: 'bg-blue-500',
                         }}
                     >

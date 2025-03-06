@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { ADD_PROPERTIES, HOME, PROPERTIES } from '@/app/api/routes';
+
 const MobileMenu = () => {
     const pathname = usePathname();
     
@@ -8,25 +10,25 @@ const MobileMenu = () => {
         <div id='mobile-menu'>
             <div className='space-y-1 px-2 pb-3 pt-2'>
                 <Link
-                    href='/'
+                    href={HOME}
                     className={`${
-                        pathname === '/' ? 'bg-black' : ''
+                        pathname === HOME ? 'bg-black' : ''
                     } text-white block rounded-md px-3 py-2 text-base font-medium`}
                 >
                     Home
                 </Link>
                 <Link
-                    href='/properties'
+                    href={PROPERTIES}
                     className={`${
-                        pathname === '/properties' ? 'bg-black' : ''
+                        pathname === PROPERTIES ? 'bg-black' : ''
                     } text-white block rounded-md px-3 py-2 text-base font-medium`}
                 >
                     Properties
                 </Link>
                 <Link
-                    href='/properties/add'
+                    href={ADD_PROPERTIES}
                     className={`${
-                        pathname === '/properties/add' ? 'bg-black' : ''
+                        pathname === ADD_PROPERTIES ? 'bg-black' : ''
                     } text-white block rounded-md px-3 py-2 text-base font-medium`}
                 >
                     Add Property

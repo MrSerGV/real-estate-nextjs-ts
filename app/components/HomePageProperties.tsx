@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import PropertyCard from './PropertyCard';
 import properties from '@/properties.json';
+import {PROPERTIES} from "@/app/api/routes";
 
 const HomePageProperties = async () => {
     const recentProperties = properties.slice(0,3);
@@ -25,7 +26,7 @@ const HomePageProperties = async () => {
             </section>
             <section className='m-auto max-w-lg my-10 px-6'>
                 <Link
-                    href='/properties'
+                    href={PROPERTIES}
                     className='block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700'
                 >
                     View All Properties

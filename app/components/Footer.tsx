@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import logo from '@/assets/images/logo-black.png';
 
+import { PROPERTIES, TERMS } from '@/app/api/routes';
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
@@ -13,10 +15,10 @@ const Footer = () => {
                 <div className='flex flex-wrap justify-center md:justify-start mb-4 md:mb-0'>
                     <ul className='flex space-x-4'>
                         <li>
-                            <a href='/properties'>Properties</a>
+                            <a href={PROPERTIES}>Properties</a>
                         </li>
                         <li>
-                            <a href='/terms'>Terms of Service</a>
+                            <a href={TERMS}>Terms of Service</a>
                         </li>
                     </ul>
                 </div>
