@@ -1,0 +1,31 @@
+{
+    "loadingLabel": "Loading Spinner",
+    "propertySearchForm": {
+        "inputLabel": "Location",
+        "inputPlaceholder" :"Enter Keywords or Location",
+        "selectLabel": "Property Type",
+        "searchBtnText": "Search",
+        "All": "All",
+        "Apartment": "Apartment",
+        "Studio" : "Studio",
+        "Condo" : "Condo",
+        "House" : "House",
+        "CabinOrCottage" : "Cabin or Cottage",
+        "Loft" : "Loft",
+        "Room" : "Room",
+        "Other" : "Other"
+    },
+    "menu": {
+        "homeText": "Home",
+        "propertiesText": "Properties",
+        "addPropertyText": "Add Property",
+        "mobileMenuButtonText": "Open main menu",
+        "openUserMenuButtonText": "Open user menu"
+    },
+    "profileMenu": {
+        "profileButtonText": "Your Profile",
+        "savePropertiesButtonText": "Saved Properties",
+        "singOutButtonText": "Sign Out"
+    },
+    "logoText": "RealEstate"
+}

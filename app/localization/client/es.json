@@ -1,0 +1,31 @@
+{
+    "loadingLabel": "Cargando Spinner",
+    "propertySearchForm": {
+        "inputLabel": "Ubicación",
+        "inputPlaceholder": "Introduzca palabras clave o ubicación",
+        "selectLabel": "Tipo de Propiedad",
+        "searchBtnText": "Buscar",
+        "All": "Todo",
+        "Apartment": "Apartamento",
+        "Studio": "Estudio",
+        "Condo": "Condominio",
+        "House": "Casa",
+        "CabinOrCottage": "Cabaña o Casa de Campo",
+        "Loft": "Ático",
+        "Room": "Habitación",
+        "Other": "Otro"
+    },
+    "menu": {
+        "homeText": "Inicio",
+        "propertiesText": "Propiedades",
+        "addPropertyText": "Agregar Propiedad",
+        "mobileMenuButtonText": "Abrir menú principal",
+        "openUserMenuButtonText": "Abrir menú de usuario"
+    },
+    "profileMenu": {
+        "profileButtonText": "Tu Perfil",
+        "savePropertiesButtonText": "Propiedades Guardadas",
+        "singOutButtonText": "Cerrar Sesión"
+    },
+    "logoText": "RealEstate"
+}

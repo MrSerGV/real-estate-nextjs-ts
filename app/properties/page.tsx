@@ -10,7 +10,8 @@ interface PropertiesPageProps {
     }
 }
 
-const PropertiesPage = async ({ searchParams: { pageSize = 9, page = 1 } }: PropertiesPageProps) => {
+const PropertiesPage = async ({ searchParams }: PropertiesPageProps) => {
+    const { pageSize = 9, page = 1 } = await searchParams;
     const total = await properties.length;
     const showPagination = total > pageSize;
 

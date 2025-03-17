@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { PROPERTIES_PAGINATION_PAGE } from '@/app/api/routes';
+import { getDictionary } from '@/app/utils/getDictionary';
 
 interface PaginationProps {
     page: number;
@@ -9,7 +10,8 @@ interface PaginationProps {
 
 }
 
-const Pagination = ({ page, pageSize, totalItems }: PaginationProps) => {
+const Pagination = async ({ page, pageSize, totalItems }: PaginationProps) => {
+    const dict = await getDictionary();
     const totalPages = Math.ceil(totalItems / pageSize);
 
     return (
@@ -19,13 +21,13 @@ const Pagination = ({ page, pageSize, totalItems }: PaginationProps) => {
                     className='mr-2 px-2 py-1 border border-gray-300 rounded'
                     href={`${PROPERTIES_PAGINATION_PAGE}${page - 1}`}
                 >
-                    Previous
+                    {dict.pagination.previousButtonText}
                 </Link>
             ) : null}
 
             <span className='mx-2'>
         {' '}
-                Page {page} of {totalPages}
+                {dict.pagination.counterText.replace("{0}", `${page}`).replace("{1}", `${totalPages}`)}
       </span>
 
             {page < totalPages ? (
@@ -33,7 +35,7 @@ const Pagination = ({ page, pageSize, totalItems }: PaginationProps) => {
                     className='ml-2 px-2 py-1 border border-gray-300 rounded'
                     href={`${PROPERTIES_PAGINATION_PAGE}${page + 1}`}
                 >
-                    Next
+                    {dict.pagination.nextButtonText}
                 </Link>
             ) : null}
         </section>

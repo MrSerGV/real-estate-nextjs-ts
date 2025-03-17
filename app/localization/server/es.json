@@ -1,0 +1,40 @@
+{
+  "homePage": {
+    "title": "Encuentra el Alquiler Perfecto",
+    "description": "Descubre la propiedad perfecta que se adapta a tus necesidades."
+  },
+  "footer": {
+    "footerText": "RealEstate. Todos los derechos reservados",
+    "linkToPropertyText": "Propiedades",
+    "linkToTermsText": "Términos de Servicio"
+  },
+  "homePageProperties": {
+    "recentPropertiesText": "Propiedades Recientes",
+    "noPropertiesFoundText": "No se encontraron propiedades",
+    "viewAllPropertiesText": "Ver Todas las Propiedades"
+  },
+  "propertyCard": {
+    "buttonText": "Detalles",
+    "propertyBeds": " Camas",
+    "propertyBaths": " Baños",
+    "propertySquare": " metres cuadrados",
+    "propertyWeekly": "Semanal",
+    "propertyMonthly": "Mensual",
+    "propertyMonthlyShort": "mes",
+    "propertyWeeklyShort": "sem",
+    "propertyNight": "noche"
+  },
+  "infoBoxesList": {
+    "headingText1": "Para Inquilinos",
+    "infoText1": "Encuentra la propiedad en alquiler de tus sueños. Marca propiedades y contacta con los propietarios.",
+    "buttonText1": "Explorar Propiedades",
+    "headingText2": "Para Propietarios",
+    "infoText2": "Lista tus propiedades y alcanza posibles inquilinos. Alquila como Airbnb o a largo plazo.",
+    "buttonText2": "Para Propietarios"
+  },
+  "pagination": {
+    "previousButtonText": "Anterior",
+    "nextButtonText": "Siguiente",
+    "counterText": "Página {0} de {1}"
+  }
+}

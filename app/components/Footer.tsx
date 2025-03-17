@@ -2,8 +2,10 @@ import Image from 'next/image';
 import logo from '@/assets/images/logo-black.png';
 
 import { PROPERTIES, TERMS } from '@/app/api/routes';
+import { getDictionary } from '@/app/utils/getDictionary';
 
-const Footer = () => {
+const Footer = async () => {
+    const dict = await getDictionary();
     const currentYear = new Date().getFullYear();
 
     return (
@@ -15,16 +17,16 @@ const Footer = () => {
                 <div className='flex flex-wrap justify-center md:justify-start mb-4 md:mb-0'>
                     <ul className='flex space-x-4'>
                         <li>
-                            <a href={PROPERTIES}>Properties</a>
+                            <a href={PROPERTIES}>{dict.footer.linkToPropertyText}</a>
                         </li>
                         <li>
-                            <a href={TERMS}>Terms of Service</a>
+                            <a href={TERMS}>{dict.footer.linkToTermsText}</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <p className='text-sm text-gray-500 mt-2 md:mt-0'>
-                        &copy; {currentYear} RealEstate. All rights reserved.
+                        &copy; {currentYear} {dict.footer.footerText}
                     </p>
                 </div>
             </div>

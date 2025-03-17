@@ -1,20 +1,25 @@
+'use client';
 import Link from 'next/link';
 import { signOut } from 'next-auth/react';
 import { useState } from 'react';
 
 import ProfileMenu from '@/app/components/ProfileMenu';
 import ProfileDropdownButton from '@/app/components/ProfileDropdownButton';
+import LanguageSwitcher from "@/app/components/LanguageSwitcher";
+import { HOME, MESSAGES } from "@/app/api/routes";
 
 const RightSideMenu = () => {
     const [isProfileMenuOpen, setIsProfileMenuOpen] = useState<boolean>(false);
+
     const onClickSignOut = () => {
         setIsProfileMenuOpen(false);
-        signOut({ callbackUrl: '/' });
+        signOut({ callbackUrl: HOME });
     };
     
     return (
         <div className='absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0'>
-            <Link href='/messages' className='relative group'>
+            <LanguageSwitcher />
+            <Link href={MESSAGES} className='relative group'>
                 <button
                     type='button'
                     className='relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'

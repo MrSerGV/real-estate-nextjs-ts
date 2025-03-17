@@ -1,9 +1,12 @@
+'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { ADD_PROPERTIES, HOME, PROPERTIES } from '@/app/api/routes';
+import { useTranslation } from '@/app/localization/client/useTranslation';
 
 const DesktopMenu = () => {
+    const { t } = useTranslation('menu');
     const pathname = usePathname();
     
     return (
@@ -15,7 +18,7 @@ const DesktopMenu = () => {
                         pathname === HOME ? 'bg-black' : ''
                     } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
-                    Home
+                    {t('homeText')}
                 </Link>
                 <Link
                     href={PROPERTIES}
@@ -23,7 +26,7 @@ const DesktopMenu = () => {
                         pathname === PROPERTIES ? 'bg-black' : ''
                     } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
-                    Properties
+                    {t('propertiesText')}
                 </Link>
                 <Link
                     href={ADD_PROPERTIES}
@@ -31,7 +34,7 @@ const DesktopMenu = () => {
                         pathname === ADD_PROPERTIES ? 'bg-black' : ''
                     } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
-                    Add Property
+                    {t('addPropertyText')}
                 </Link>
             </div>
         </div>

@@ -1,0 +1,41 @@
+{
+  "homePage": {
+    "title": "Find The Perfect Rental",
+    "description": "Discover the perfect property that suits your needs."
+  },
+  "footer": {
+    "footerText": "RealEstate. All rights reserved",
+    "linkToPropertyText": "Properties",
+    "linkToTermsText": "Terms of Service"
+  },
+  "homePageProperties": {
+    "recentPropertiesText": "Recent Properties",
+    "noPropertiesFoundText": "No Properties Found",
+    "viewAllPropertiesText": "View All Properties",
+    "propertyCartButtonText": "Details"
+  },
+  "propertyCard": {
+    "buttonText": "Details",
+    "propertyBeds": " Beds",
+    "propertyBaths": " Baths",
+    "propertySquare": " sqft",
+    "propertyWeekly": "Weekly",
+    "propertyMonthly": "Monthly",
+    "propertyMonthlyShort": "mo",
+    "propertyWeeklyShort": "wk",
+    "propertyNight": "night"
+  },
+  "infoBoxesList": {
+    "headingText1": "For Renters",
+    "infoText1": "Find your dream rental property. Bookmark properties and contact owners.",
+    "buttonText1": "Browse Properties",
+    "headingText2": "For Property Owners",
+    "infoText2": "List your properties and reach potential tenants. Rent as an Airbnb or long term.",
+    "buttonText2": "For Property Owners"
+  },
+  "pagination": {
+    "previousButtonText": "Previous",
+    "nextButtonText": "Next",
+    "counterText": "Page {0} of {1}"
+  }
+}

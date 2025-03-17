@@ -1,12 +1,16 @@
+'use client'
 import Image from 'next/image';
 
 import profileDefault from '@assets/images/profile.png';
+import { useTranslation } from '@/app/localization/client/useTranslation';
 
 interface ProfileDropdownButtonProps {
     onClickButton: () => void;
 }
 
 const ProfileDropdownButton = ({ onClickButton }: ProfileDropdownButtonProps) => {
+    const { t } = useTranslation('menu');
+
     return (
             <div>
                 <button
@@ -18,7 +22,7 @@ const ProfileDropdownButton = ({ onClickButton }: ProfileDropdownButtonProps) =>
                     onClick={onClickButton}
                 >
                     <span className='absolute -inset-1.5'></span>
-                    <span className='sr-only'>Open user menu</span>
+                    <span className='sr-only'>{t('openUserMenuButtonText')}</span>
                     <Image
                         className='h-8 w-8 rounded-full'
                         src={profileDefault}

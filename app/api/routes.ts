@@ -1,5 +1,9 @@
 export const HOME = '/';
 export const PROPERTIES = '/properties';
-export const PROPERTIES_PAGINATION_PAGE = '/properties?page=';
+export const PROPERTIES_PAGINATION_PAGE = `${PROPERTIES}?page=`;
+export const PROPERTIES_SEARCH_RESULT = `${PROPERTIES}/search-results`;
+export const PROPERTIES_SAVED = `${PROPERTIES}/saved`;
 export const ADD_PROPERTIES = `${PROPERTIES}/add`;
 export const TERMS = '/terms';
+export const MESSAGES = '/messages';
+export const PROFILE = '/profile';

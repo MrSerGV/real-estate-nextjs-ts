@@ -1,8 +1,13 @@
+'use client';
+import { useTranslation } from '@/app/localization/client/useTranslation';
+
 interface MobileMenuButtonProps {
     onClickButton: () => void;
 }
 
 const MobileMenuButton = ({ onClickButton } : MobileMenuButtonProps) => {
+    const { t } = useTranslation('menu');
+
     return (
         <button
             type='button'
@@ -13,7 +18,7 @@ const MobileMenuButton = ({ onClickButton } : MobileMenuButtonProps) => {
             onClick={onClickButton}
         >
             <span className='absolute -inset-0.5'></span>
-            <span className='sr-only'>Open main menu</span>
+            <span className='sr-only'>{t('mobileMenuButtonText')}</span>
             <svg
                 className='block h-6 w-6'
                 fill='none'

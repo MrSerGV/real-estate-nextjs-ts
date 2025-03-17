@@ -1,4 +1,9 @@
+'use client'
+
 import Link from 'next/link';
+
+import { useTranslation } from '@/app/localization/client/useTranslation';
+import { PROFILE, PROPERTIES_SAVED } from '@/app/api/routes';
 
 interface ProfileMenuProps {
     onClickProfile: () => void;
@@ -7,6 +12,8 @@ interface ProfileMenuProps {
 }
 
 const ProfileMenu = ({ onClickProfile, onClickSave, onClickSignOut }: ProfileMenuProps) => {
+    const { t } = useTranslation('profileMenu');
+
     return <div
         id='user-menu'
         className='absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
@@ -16,24 +23,24 @@ const ProfileMenu = ({ onClickProfile, onClickSave, onClickSignOut }: ProfileMen
         tabIndex={-1}
     >
         <Link
-            href='/profile'
+            href={PROFILE}
             className='block px-4 py-2 text-sm text-gray-700'
             role='menuitem'
             tabIndex={-1}
             id='user-menu-item-0'
             onClick={onClickProfile}
         >
-            Your Profile
+            {t('profileButtonText')}
         </Link>
         <Link
-            href='/properties/saved'
+            href={PROPERTIES_SAVED}
             className='block px-4 py-2 text-sm text-gray-700'
             role='menuitem'
             tabIndex={-1}
             id='user-menu-item-2'
             onClick={onClickSave}
         >
-            Saved Properties
+            {t('savePropertiesButtonText')}
         </Link>
         <button
             onClick={onClickSignOut}
@@ -42,7 +49,7 @@ const ProfileMenu = ({ onClickProfile, onClickSave, onClickSignOut }: ProfileMen
             tabIndex={-1}
             id='user-menu-item-2'
         >
-            Sign Out
+            {t('singOutButtonText')}
         </button>
     </div>
 }
