@@ -1,7 +1,9 @@
-import PropertyCard, {PropertyCardProps} from '@/app/components/PropertyCard';
+import PropertyCard from '@/app/components/PropertyCard';
 import PropertySearchForm from '@/app/components/PropertySearchForm';
 import Pagination from '@/app/components/Pagination';
-import properties from '@/properties.json';
+import Property from '@/models/Property';
+import connectDB from '@/config/database';
+import { PropertiesType } from '@/types/propertiesTypes';
 
 interface PropertiesPageProps {
     searchParams: {
@@ -11,9 +13,12 @@ interface PropertiesPageProps {
 }
 
 const PropertiesPage = async ({ searchParams }: PropertiesPageProps) => {
+    await connectDB();
     const { pageSize = 9, page = 1 } = await searchParams;
-    const total = await properties.length;
+    const total = await Property.countDocuments({});
     const showPagination = total > pageSize;
+    const skip = (page - 1) * pageSize;
+    const properties: PropertiesType[] = await Property.find({}).skip(skip).limit(pageSize);
 
     return (
         <>

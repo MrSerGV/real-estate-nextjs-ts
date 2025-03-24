@@ -1,12 +1,21 @@
 import Link from 'next/link';
 
 import PropertyCard from './PropertyCard';
-import properties from '@/properties.json';
 import { PROPERTIES } from '@/app/api/routes';
 import { getDictionary } from '@/app/utils/getDictionary';
+import connectDB from '@/config/database';
+import Property from '@/models/Property';
+import {PropertiesType} from "@/types/propertiesTypes";
 
 const HomePageProperties = async () => {
-    const recentProperties = properties.slice(0,3);
+    await connectDB();
+
+    // Get the 3 latest properties
+    const recentProperties: PropertiesType[] = await Property.find({})
+        .sort({ createdAt: -1 })
+        .limit(3)
+        .lean();
+
     const dict = await getDictionary();
     
     return (
