@@ -27,5 +27,13 @@
         "savePropertiesButtonText": "Saved Properties",
         "singOutButtonText": "Sign Out"
     },
+    "bookmark" : {
+        "removeBookmark": "Remove Bookmark",
+        "bookmarkText": "Bookmark Property",
+        "bookmarkLoading": "Loading..."
+    },
+    "shareButtons": {
+        "shareText": "Share This Property: "
+    },
     "logoText": "RealEstate"
 }

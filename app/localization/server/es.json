@@ -14,7 +14,7 @@
     "viewAllPropertiesText": "Ver Todas las Propiedades"
   },
   "propertyCard": {
-    "buttonText": "Detalles",
+    "propertyDetails": "Detalles",
     "propertyBeds": " Camas",
     "propertyBaths": " Baños",
     "propertySquare": " metres cuadrados",
@@ -22,7 +22,15 @@
     "propertyMonthly": "Mensual",
     "propertyMonthlyShort": "mes",
     "propertyWeeklyShort": "sem",
-    "propertyNight": "noche"
+    "propertyNight": "noche",
+    "propertyOptions": "Tarifas y Opciones",
+    "propertyNightly": "Nocturno",
+    "propertyDescription": "Descripción y detalles",
+    "propertyAmenities": "Servicios",
+    "propertyOneNotFound": "Propiedad no Encontrada",
+    "propertyBack": "Volver a Propiedades",
+    "propertyManyNotFound": "No se Encontraron Propiedades",
+    "propertyBrowse": "Explorar Propiedades"
   },
   "infoBoxesList": {
     "headingText1": "Para Inquilinos",

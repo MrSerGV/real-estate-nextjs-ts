@@ -27,5 +27,13 @@
         "savePropertiesButtonText": "Propiedades Guardadas",
         "singOutButtonText": "Cerrar Sesión"
     },
+    "bookmark" : {
+        "removeBookmark": "Eliminar Marcador",
+        "bookmarkText": "Propiedad del Marcador",
+        "bookmarkLoading": "Cargando..."
+    },
+    "shareButtons": {
+        "shareText": "Comparte Esta Propiedad: "
+    },
     "logoText": "RealEstate"
 }

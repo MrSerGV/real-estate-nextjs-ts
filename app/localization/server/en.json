@@ -11,11 +11,10 @@
   "homePageProperties": {
     "recentPropertiesText": "Recent Properties",
     "noPropertiesFoundText": "No Properties Found",
-    "viewAllPropertiesText": "View All Properties",
-    "propertyCartButtonText": "Details"
+    "viewAllPropertiesText": "View All Properties"
   },
   "propertyCard": {
-    "buttonText": "Details",
+    "propertyDetails": "Details",
     "propertyBeds": " Beds",
     "propertyBaths": " Baths",
     "propertySquare": " sqft",
@@ -23,7 +22,15 @@
     "propertyMonthly": "Monthly",
     "propertyMonthlyShort": "mo",
     "propertyWeeklyShort": "wk",
-    "propertyNight": "night"
+    "propertyNight": "night",
+    "propertyOptions": "Rates & Options",
+    "propertyNightly": "Nightly",
+    "propertyDescription": "Description & Details",
+    "propertyAmenities": "Amenities",
+    "propertyOneNotFound": "Property Not Found",
+    "propertyBack": "Back to Properties",
+    "propertyManyNotFound": "No properties found",
+    "propertyBrowse": "Browse Properties"
   },
   "infoBoxesList": {
     "headingText1": "For Renters",

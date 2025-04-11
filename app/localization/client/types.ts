@@ -3,6 +3,8 @@ export type ClientDictionary = {
     "propertySearchForm": PropertySearchForm,
     "menu": Menu,
     "profileMenu": ProfileMenu,
+    "bookmark": Bookmark,
+    "shareButtons": ShareButtons,
     "logoText": string,
 };
 
@@ -34,4 +36,14 @@ type ProfileMenu = {
     "profileButtonText": string,
     "savePropertiesButtonText": string,
     "singOutButtonText": string,
+}
+
+type Bookmark = {
+    "removeBookmark": string,
+    "bookmarkText": string,
+    "bookmarkLoading": string,
+}
+
+type ShareButtons = {
+    "shareText": string,
 }

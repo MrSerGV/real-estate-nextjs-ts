@@ -40,7 +40,7 @@ type Pagination = {
 }
 
 type PropertyCard = {
-    buttonText: string,
+    propertyDetails: string,
     propertyBeds: string,
     propertyBaths: string,
     propertySquare: string,
@@ -49,4 +49,12 @@ type PropertyCard = {
     propertyMonthlyShort: string,
     propertyWeeklyShort: string,
     propertyNight: string,
+    propertyOptions: string,
+    propertyNightly: string,
+    propertyDescription: string,
+    propertyAmenities: string,
+    propertyOneNotFound: string,
+    propertyBack: string,
+    propertyManyNotFound: string,
+    propertyBrowse: string
 }

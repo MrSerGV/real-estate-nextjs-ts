@@ -1,4 +1,4 @@
-export type PropertiesType  = {
+export interface PropertiesType {
     _id: string;
     owner: string;
     name: string;

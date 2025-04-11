@@ -1,11 +1,10 @@
 import { Schema, model, models, Model } from 'mongoose';
-import { PropertiesType } from '../types/propertiesTypes';
+import { PropertiesType } from '@/types/propertiesTypes';
 
 const PropertySchema: Schema = new Schema(
   {
     owner: {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
+      type: Number,
       required: true,
     },
     name: {
